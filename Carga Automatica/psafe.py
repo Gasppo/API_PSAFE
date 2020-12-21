@@ -1,25 +1,3 @@
-#!/usr/bin/scl enable rh-python36 -- python
-#
-# PSAFE account, system and database registration
-#
-# Usage: psafe.py filename.csv ORACLE/MONGODB/MYSQL/POSTGRESQL/MSSQL/SRV
-#
-# CSV file format for registering assets into PSAFE Console
-#
-#
-# For loading server assets
-# { hostname (short), ip, platform, environment, user accounts }
-#
-# For loading database assets
-# { DB/CDB/PDB name, port, hostname (short), user accounts }
-#
-#
-# Platform: Windows, Linux
-# Environment: Produccion, Desarrollo
-#
-#
-# (C) 2020 Federico Trasande, IBM Argentina SRL
-
 import requests
 import json
 import sys
